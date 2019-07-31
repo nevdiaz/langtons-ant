@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.ToggleButton?>
+<?import edu.cnm.deepdive.langton.view.TerrainView?>
 <GridPane xmlns="http://javafx.com/javafx"
   xmlns:fx="http://javafx.com/fxml"
   fx:controller="edu.cnm.deepdive.langton.controller.MainController"
@@ -17,7 +18,16 @@
 
   </columnConstraints>
 
-  <!--  ToDo include element for custom view-->
+<TerrainView
+  fx:id="terrainView"
+  GridPane.rowIndex="0"
+  GridPane.columnIndex="0"
+  GridPane.columnSpan="3"
+  GridPane.halignment="CENTER"
+  GridPane.valignment="CENTER"
+  width="600"
+  height="600"/>
+
 
   <Slider
     fx:id="populationSize"
